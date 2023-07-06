@@ -1,9 +1,72 @@
-<html>
+<!DOCTYPE html>
+<html lang="en-US">
+ 
+<!-- Import the component -->
+<script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.0.1/model-viewer.min.js"></script>
 
+<!-- Use it like any other HTML element -->
+<model-viewer alt="Neil Armstrong's Spacesuit from the Smithsonian Digitization Programs Office and National Air and Space Museum" src="shared-assets/models/NeilArmstrong.glb" ar environment-image="shared-assets/environments/moon_1k.hdr" poster="shared-assets/models/NeilArmstrong.webp" shadow-intensity="1" camera-controls touch-action="pan-y"></model-viewer>
+
+
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+    <title>Mesh Model</title>
+</head>
+ 
 <body>
-  <h1>Lia W.</h1>
-  <p>Welcome to my website!</p>
-  <img src="https://content.codecademy.com/articles/github-pages-via-web-app/happy-ice-cream.gif" />
-</body>
+    <div class="container">
+        <span style="font-size:36px">Model 1</span>
 
+        <div class="center">
+            <model-viewer camera-controls alt="mesh" style="width: 100%;" src="https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Models/master/2.0/2CylinderEngine/glTF-Binary/2CylinderEngine.glb">
+            </model-viewer>
+        </div>
+
+
+
+    </div>
+    <div class="container">
+        <span style="font-size:36px">Model 2</span>
+
+        <div class="center">
+            <div class="center">
+                <model-viewer camera-controls alt="mesh" style="width: 100%;" src="resources/poisson_mesh.glb">
+                </model-viewer>
+            </div>
+            <!-- <model-viewer style="width: 100%;" src="resources/poisson_mesh.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls poster="poster.webp" shadow-intensity="0.64" auto-rotate camera-orbit="361.6deg 102.6deg 5.545m" field-of-view="23.37deg" exposure="0.59" shadow-softness="0.38">
+                <div class="progress-bar hide" slot="progress-bar">
+                    <div class="update-bar"></div>
+                </div>
+            </model-viewer> -->
+        </div>
+
+
+
+    </div>
+
+
+    
+ 
+</body>
+ 
+<style>
+    .center {
+        margin: auto;
+        width: 50%;
+        padding: 10px;
+    }
+
+    .container {
+        text-align: center;
+        margin: auto;
+    }
+
+    .center_container {
+        display: block;
+  margin-left: auto;
+  margin-right: auto;
+    }
+
+</style>
 </html>
